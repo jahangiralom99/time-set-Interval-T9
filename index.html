@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time trying with set-Interval</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main class="text-center mt-24">
+      <h1 id="text" class="text-5xl font-bold">0</h1>
+      <div class="mt-8">
+        <button
+          onclick="handleStartBtn(this)"
+          id="start-btn"
+          class="btn bg-green-500 hover:bg-green-800 py-3 px-6 rounded-lg text-white font-bold"
+        >
+          Start
+        </button>
+
+        <button
+        onclick="handleStopBtn(this)"
+          id="stop-btn"
+          class="btn bg-green-500 hover:bg-green-800 py-3 px-6 rounded-lg text-white font-bold"
+    
+        >
+          Stop
+        </button>
+
+        <button
+        onclick="handleResetBtn(this)"
+          id="rest-btn"
+          class="btn bg-green-500 hover:bg-green-800 py-3 px-6 rounded-lg text-white font-bold"
+        >
+          Rest
+        </button>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="watch.js"></script>
+  </body>
+</html>
